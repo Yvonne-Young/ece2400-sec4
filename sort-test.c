@@ -3,7 +3,7 @@
 
 void sort( int* x_ptr, int* y_ptr )
 {
-  if ( (*y_ptr) > (*x_ptr) ) {
+  if ( (*y_ptr) <= (*x_ptr) ) {
     int temp = *x_ptr;
     *x_ptr   = *y_ptr;
     *y_ptr   = temp;
@@ -12,6 +12,9 @@ void sort( int* x_ptr, int* y_ptr )
 
 int main( void )
 {
+  //int buffer[512];
+  //buffer[0] = 5;
+  //int a = buffer[0];
   int a = 5;
   int b = 9;
   sort( &a, &b );
